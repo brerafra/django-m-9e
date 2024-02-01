@@ -94,12 +94,12 @@ DATABASES = {
 """
 DATABASES = {
     'default': {
-        'ENGINE'  : 'django.db.backends.mysql', # <-- UPDATED line 
+        'ENGINE'  : 'django.db.backends.postgresql_psycopg2', # <-- UPDATED line 
         'NAME'    : 'railway',                 # <-- UPDATED line 
-        'USER'    : 'root',                     # <-- UPDATED line
-        'PASSWORD': 'hdHe5ahd1Bef2A6236ChcFbg5eagCe5H',              # <-- UPDATED line
-        'HOST'    : 'viaduct.proxy.rlwy.net',                # <-- UPDATED line
-        'PORT'    : '21576',
+        'USER'    : 'postgres',                     # <-- UPDATED line
+        'PASSWORD': 'GaBFg3CGa3F3634F-a24gBAeG5bAfBf6',              # <-- UPDATED line
+        'HOST'    : 'roundhouse.proxy.rlwy.net',                # <-- UPDATED line
+        'PORT'    : '16298',
     }
 }
 
