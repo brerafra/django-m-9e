@@ -6,3 +6,4 @@ sqlparse==0.4.2
 whitenoise==6.2.0
 django-filter==23.5
 django-mysql==4.12.0
+mysqlclient==23.2.1
