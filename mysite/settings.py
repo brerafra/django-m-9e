@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user_app',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +79,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -88,7 +90,18 @@ DATABASES = {
         'PORT': os.environ["PGPORT"],
     }
 }
+"""
 
+DATABASES = {
+    'default': {
+        'ENGINE'  : 'django.db.backends.mysql', # <-- UPDATED line 
+        'NAME'    : 'railway',                 # <-- UPDATED line 
+        'USER'    : 'root',                     # <-- UPDATED line
+        'PASSWORD': 'hdHe5ahd1Bef2A6236ChcFbg5eagCe5H',              # <-- UPDATED line
+        'HOST'    : 'viaduct.proxy.rlwy.net',                # <-- UPDATED line
+        'PORT'    : '21576',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
