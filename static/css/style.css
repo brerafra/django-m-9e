@@ -1,0 +1,25 @@
+.dashboard {
+    display: flex;
+}
+
+@media (min-width:992px) {    
+    .vertical-nav {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f8f8f8;
+        overflow-y: auto;
+        padding-top: 30px;
+      }
+      .dashboard {
+        width: 100%;
+        margin-left: 155px;
+      }
+      .data-flow {
+        width: 1200px;
+        height: 601px;
+        margin-top: 50px;
+      }
+  }
